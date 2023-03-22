@@ -22,7 +22,8 @@ public class BanqueService {
         AtomicInteger count = new AtomicInteger(1);
         List<Compte> compteList=new ArrayList<>(4);
         for (int i=0;i<3;i++) {
-            compteList.add(new Compte(count.getAndIncrement(),Math.random()*10000,new Date()));
+
+           compteList.add(new Compte(count.getAndIncrement(),Math.random()*10000,new Date()));
         }
         return compteList;
     }
